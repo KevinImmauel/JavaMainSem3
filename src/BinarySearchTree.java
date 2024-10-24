@@ -79,7 +79,7 @@ public class BinarySearchTree {
             }
         }
     }
-    static Node getSuccessor(Node curr) {
+    Node getSuccessor(Node curr) {
         curr = curr.right;
         while (curr != null && curr.left != null) {
             curr = curr.left;
